@@ -3,83 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-course/index.css" />
     <title>Resume</title>
+
   </head>
+  
   <body>
-    <h1>Привет!</h1>
-    <img src="./задание картинка.jpg" width="150" alt="Фото со мной" />
-    <p>
-      Меня зовут <strong>Набережный Василий</strong>, мне 27 лет. Я новичок в
-      сфере IT
-    </p>
-    <p>
-      Я люблю:
-      <em
-        >весело проводить время, путешествовать, и обучаться IT
-        специальности.</em
-      >
-    </p>
-    <br />
-    <p><strong>Список соц.сетей</strong></p>
-    <br />
-    <a href="https://vk.com/id240218087" target="_blank"
-      >Моя страница вк |
-      <a href="https://t.me/vasek_Nab" target="_blank">Telegram</a></a
-    >
-    <hr />
-    <h2>Мои хобби</h2>
-    <ul>
-      <li>Кино</li>
-      <li>Прогулки</li>
-      <li>Компьютерные игры</li>
-    </ul>
-    <br />
-    <h3>Опыт работы</h3>
-    <table>
-      <th>Название</th>
-      <th>Должность</th>
-      <th>Год</th>
 
-      <tr>
-        <td>TROY</td>
-        <td>Повар</td>
-        <td>2015-2016</td>
-      </tr>
-      <tr>
-        <td>Тринити</td>
-        <td>Повар</td>
-        <td>2021-2022</td>
-      </tr>
-      <tr>
-        <td>Италония</td>
-        <td>Повар</td>
-        <td>2022-сейчас</td>
-      </tr>
-    </table>
-    <br />
+<div class="container">
+  <div class="box">
+    <div>
+      
+        
+      <div class="card">
+      <div class="info">
+        <div class="info-text">
+          <table>
+            <tr>
+              <td>
+          <img src="./задание картинка.jpg" alt="Фото со мной" class="avatar" />
+        </td>
+        <td>
+          <p>
+            Меня зовут <strong>Набережный Василий</strong>, мне 27 лет. Я
+            новичок в сфере IT
+          </p>
 
-    <h2>Связаться со мной</h2>
-    <div>
-      <label for="text">Ваше имя:</label>
-      <input type="text" id="text" placeholder="Введите имя" />
-    </div>
-    <div>
-      <label for="email">Ваш Email:</label>
-      <input type="email" id="email" placeholder="Введите email" />
-    </div>
+          <p>
+            Я люблю:
+            <em
+              >весело проводить время, путешествовать, и обучаться IT
+              специальности.</em
+            >
+          </p>
 
-    <div>
-      <label for="massage">Ваше Сообщение</label>
-      <br />
-      <textarea
-        name=""
-        id="massage"
-        cols="20"
-        rows="5"
-        placeholder="Введите сообщение..."
-      ></textarea>
+          <h4>Список социальных сетей:</h4>
+          <a href="https://vk.com/id240218087" target="_blank"
+            >Моя страница VK
+            <br>
+            <a href="https://t.me/vasek_Nab" target="_blank">Telegram</a></a
+          ></td>
+        </tr>
+      </table>
+        </div>
+      </div>
+   
+
+      <div class="card-hobby">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Кино</li>
+          <li>Прогулки</li>
+          <li>Компьютерные игры</li>
+        </ol>
+      </div>
+
+      <div class="card-job">
+        <h2>Опыт работы</h2>
+        <table>
+          <th>Название</th>
+          <th>Должность</th>
+          <th>Год</th>
+
+          <tr>
+            <td>TROY</td>
+            <td>Повар</td>
+            <td>2015-2016</td>
+          </tr>
+          <tr>
+            <td>Тринити</td>
+            <td>Повар</td>
+            <td>2021-2022</td>
+          </tr>
+          <tr>
+            <td>Италония</td>
+            <td>Повар</td>
+            <td>2022-сейчас</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-con">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+
+        <div class="form-group">
+          <label for="text">Ваше имя:</label>
+          <input type="text" id="text" placeholder="Введите имя" />
+        </div>
+        <div class="form-group">
+          <label for="email">Ваш Email:</label>
+          <input type="email" id="email" placeholder="Введите email" />
+        </div>
+      </div>
+
+        <div class="form-group">
+          <label for="massage">Ваше Сообщение</label>
+          <textarea
+            name=""
+            id="massage"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+        <br />
+        <button type="submit">Отправить!</button>
+      </div>
     </div>
-    <br />
-    <button type="submit">Отправить!</button>
+  </div>
+  </div>
   </body>
 </html>
